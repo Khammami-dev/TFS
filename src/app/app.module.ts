@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { SitelogoComponent } from './sitelogo/sitelogo.component';
 import { HomeImageComponent } from './home-image/home-image.component';
 import { HeaderComponent } from './header/header.component';
+import { HomebgComponent } from './homebg/homebg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SitelogoComponent,
     HomeImageComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomebgComponent
   ],
   imports: [
     BrowserModule,
