@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SitelogoComponent } from './sitelogo/sitelogo.component';
 import { HomeImageComponent } from './home-image/home-image.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SitelogoComponent,
-    HomeImageComponent
+    HomeImageComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
