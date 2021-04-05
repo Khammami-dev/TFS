@@ -10,5 +10,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+   receiveDataFromItemMenu(msg: string): void{
+      console.log(msg);
 
+
+   }
 }

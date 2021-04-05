@@ -1,4 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-item-menu',
@@ -6,11 +7,21 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./item-menu.component.css']
 })
 export class ItemMenuComponent implements OnInit {
- @Input() cheminImage:any = "assets/img/credit.png";
+ @Input() cheminImage:String = "";
+ @Input()  propertyTitle:String = "";
+ @Output() sendDataToHeader = new EventEmitter();
+
 
   constructor() { }
 
   ngOnInit(): void {
+    this.sendDataToHeader.emit(
+      {
+        imagePath: this.cheminImage ,
+        title: this.propertyTitle ,
+
+      }
+    );
   }
 
 }

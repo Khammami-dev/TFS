@@ -9,9 +9,25 @@
         <app-home-image></app-home-image>
     </div>
     <div class="txtHome"><app-text-home></app-text-home></div>
-    <div class="m1"><app-item-menu  ></app-item-menu></div>
-    <div class="m2"><app-item-menu></app-item-menu></div>
-    <div class="m3"><app-item-menu></app-item-menu></div>
-    <div class="m4"><app-item-menu></app-item-menu></div>
+    <div class="m1"><app-item-menu (sendDataToHeader)="receiveDataFromItemMenu($event)"
+                                   [propertyTitle]=" 'simulateur credit' "
+                                   [cheminImage]="'assets/img/IconePret.png'"></app-item-menu>
+    </div>
+    <div class="m2"><app-item-menu (sendDataToHeader)="receiveDataFromItemMenu($event)"
+                                   [propertyTitle]=" 'Calcul Taxe' "
+                                   [cheminImage]="'assets/img/credit.png'">
+
+    </app-item-menu>
+    </div>
+    <div class="m3"><app-item-menu (sendDataToHeader)="receiveDataFromItemMenu($event)"
+                                   [propertyTitle]=" 'Simulateur épargne' "
+                                   [cheminImage]="'assets/img/iconeEpargne.png'">
+
+      </app-item-menu>
+    </div>
+    <div class="m4"><app-item-menu (sendDataToHeader)="receiveDataFromItemMenu($event)"
+                                   [propertyTitle]=" 'Calcul Revenue' "
+                                   [cheminImage]="'assets/img/iconeRevenue.png'"
+    ></app-item-menu></div>
     <div class="m5"><app-item-menu></app-item-menu></div>
 </div>
