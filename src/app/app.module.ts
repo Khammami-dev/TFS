@@ -8,6 +8,7 @@ import { HomeImageComponent } from './home-image/home-image.component';
 import { HeaderComponent } from './header/header.component';
 import { HomebgComponent } from './homebg/homebg.component';
 import { TextHomeComponent } from './text-home/text-home.component';
+import { ItemMenuComponent } from './item-menu/item-menu.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TextHomeComponent } from './text-home/text-home.component';
     HomeImageComponent,
     HeaderComponent,
     HomebgComponent,
-    TextHomeComponent
+    TextHomeComponent,
+    ItemMenuComponent
   ],
   imports: [
     BrowserModule,
