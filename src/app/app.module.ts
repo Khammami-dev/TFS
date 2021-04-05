@@ -7,6 +7,7 @@ import { SitelogoComponent } from './sitelogo/sitelogo.component';
 import { HomeImageComponent } from './home-image/home-image.component';
 import { HeaderComponent } from './header/header.component';
 import { HomebgComponent } from './homebg/homebg.component';
+import { TextHomeComponent } from './text-home/text-home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HomebgComponent } from './homebg/homebg.component';
     SitelogoComponent,
     HomeImageComponent,
     HeaderComponent,
-    HomebgComponent
+    HomebgComponent,
+    TextHomeComponent
   ],
   imports: [
     BrowserModule,
