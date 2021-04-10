@@ -15,43 +15,50 @@ body{
 }
 p{
   color: #45CDD1;
-  font-size: 60px;
+
 }
 .line-1{
   position: relative;
-  top: 50%;
-  width: 24em;
-  margin: 0 auto;
+  top: 10%;
+  width: 15em;
   border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 180%;
+  font-size: 280%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
+
 }
 .line-2{
   position: relative;
-  top: 50%;
+  top: 10%;
   width: 24em;
   margin: 0 auto;
   border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 180%;
+  font-size: 200%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  transform: translateY(-50%);
+  transform: translateX(-50%);
 }
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 8s steps(44) 1s 1 normal both,
-  blinkTextCursor 500ms steps(44) infinite normal;
+  animation: typewriter 7s steps(44) 1s 1 normal both,
+  blinkTextCursor 200ms steps(44) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 12em;}
 }
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+
+/* Animation */
+.anim-typewriter2{
+  animation: typewriter2 7s steps(44) 1s 1  both normal,
+  blinkTextCursor 200ms steps(44) normal infinite ;
 }
+@keyframes typewriter2{
+  from{width: 0em;}
+  to{width: 12em;}
+}
+
