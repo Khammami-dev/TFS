@@ -9,16 +9,22 @@
 
 .logo { grid-area: 1 / 1 / 2 / 2; }
 
-.imgHome { grid-area: 1 / 5 / 3 / 6; }
+.imgHome { grid-area: 1 / 4 / 3 / 6; }
 
-.m1 { grid-area: 3 / 1 / 4 / 2; }
+.m1 { grid-area: 3 / 1 / 4 / 2;
+  margin: auto; }
 
-.m2 { grid-area: 3 / 2 / 4 / 3; }
+.m2 { grid-area: 3 / 2 / 4 / 3;
+  margin: auto;}
 
-.m3 { grid-area: 3 / 3 / 4 / 4; }
+.m3 { grid-area: 3 / 3 / 4 / 4;
+  margin: auto;}
 
-.m4 { grid-area: 3 / 4 / 4 / 5; }
 
-.m5 { grid-area: 3 / 5 / 4 / 6; }
+.m4 { grid-area: 3 / 4 / 4 / 5;
+  margin: auto; }
+
+.m5 { grid-area: 3 / 5 / 4 / 6;
+  margin: auto;}
 
 .textHome { grid-area: 2 / 2 / 3 / 5; }
