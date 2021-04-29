@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { HomebgComponent } from './homebg/homebg.component';
 import { TextHomeComponent } from './text-home/text-home.component';
 import { ItemMenuComponent } from './item-menu/item-menu.component';
+import { BodyComponent } from './body/body.component';
+import { FormCreditComponent } from './form-credit/form-credit.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ItemMenuComponent } from './item-menu/item-menu.component';
     HeaderComponent,
     HomebgComponent,
     TextHomeComponent,
-    ItemMenuComponent
+    ItemMenuComponent,
+    BodyComponent,
+    FormCreditComponent
   ],
   imports: [
     BrowserModule,
