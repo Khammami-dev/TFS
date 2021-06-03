@@ -15,6 +15,7 @@ import { MenuComponent } from './menu/menu.component';
 import { Body2Component } from './body2/body2.component';
 import { ArticleComponent } from './article/article.component';
 import { FormPretComponent } from './form-pret/form-pret.component';
+import { ArticlesComponent } from './articles/articles.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FormPretComponent } from './form-pret/form-pret.component';
     MenuComponent,
     Body2Component,
     ArticleComponent,
-    FormPretComponent
+    FormPretComponent,
+    ArticlesComponent
   ],
   imports: [
     BrowserModule,
