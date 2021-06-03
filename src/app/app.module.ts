@@ -9,6 +9,11 @@ import { HeaderComponent } from './header/header.component';
 import { HomebgComponent } from './homebg/homebg.component';
 import { TextHomeComponent } from './text-home/text-home.component';
 import { ItemMenuComponent } from './item-menu/item-menu.component';
+import { BodyComponent } from './body/body.component';
+import { Body1Component } from './body1/body1.component';
+import { MenuComponent } from './menu/menu.component';
+import { Body2Component } from './body2/body2.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { ItemMenuComponent } from './item-menu/item-menu.component';
     HeaderComponent,
     HomebgComponent,
     TextHomeComponent,
-    ItemMenuComponent
+    ItemMenuComponent,
+    BodyComponent,
+    Body1Component,
+    MenuComponent,
+    Body2Component,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,

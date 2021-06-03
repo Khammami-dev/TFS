@@ -1,0 +1,19 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "articles logo . . . . menu"
+    "articles . body1 body1 body1 . menu"
+    "articles . body1 body1 body1 . menu"
+    "articles . . . . . menu";
+}
+
+.articles { grid-area: articles; }
+
+.logo { grid-area: logo; }
+
+.body1 { grid-area: body1; }
+
+.menu { grid-area: menu; }
