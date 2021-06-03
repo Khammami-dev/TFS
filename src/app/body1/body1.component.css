@@ -1,4 +1,8 @@
 .container{
-  background-image: url("/assets/img/article.jpg");
+  background-image: url("/assets/img/ImageHome.png");
+  background-color: #e1f5ee;
+  opacity: 0.25;
+  width: 700px;
+  height: 500px;
 
 }
