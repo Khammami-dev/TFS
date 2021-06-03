@@ -14,6 +14,7 @@ import { Body1Component } from './body1/body1.component';
 import { MenuComponent } from './menu/menu.component';
 import { Body2Component } from './body2/body2.component';
 import { ArticleComponent } from './article/article.component';
+import { FormPretComponent } from './form-pret/form-pret.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ArticleComponent } from './article/article.component';
     Body1Component,
     MenuComponent,
     Body2Component,
-    ArticleComponent
+    ArticleComponent,
+    FormPretComponent
   ],
   imports: [
     BrowserModule,
