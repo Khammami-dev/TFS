@@ -16,6 +16,9 @@ import { Body2Component } from './body2/body2.component';
 import { ArticleComponent } from './article/article.component';
 import { FormPretComponent } from './form-pret/form-pret.component';
 import { ArticlesComponent } from './articles/articles.component';
+import { FomEpargneComponent } from './fom-epargne/fom-epargne.component';
+import { FormTaxeComponent } from './form-taxe/form-taxe.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,13 +35,16 @@ import { ArticlesComponent } from './articles/articles.component';
     Body2Component,
     ArticleComponent,
     FormPretComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    FomEpargneComponent,
+    FormTaxeComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
 
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

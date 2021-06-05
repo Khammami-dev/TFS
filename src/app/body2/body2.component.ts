@@ -12,4 +12,10 @@ export class Body2Component implements OnInit {
   ngOnInit(): void {
   }
 
+  receiveDataFromBody(value: string): void{
+
+    console.log(value);
+
+  }
+
 }

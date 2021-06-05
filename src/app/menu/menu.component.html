@@ -1,35 +1,40 @@
 <div class="m1">
-  <app-item-menu (sendDataToHeader)="receiveDataFromItemMenu($event)"
+  <app-item-menu
                  [propertyTitle]=" 'simulateur credit' "
-                 [cheminImage]="'assets/img/IconePret.png'">
+                 [cheminImage]="'assets/img/IconePret.png'"
+  (click)="getvalue1()">
 
   </app-item-menu>
 </div>
 <div class="m2">
   <app-item-menu (sendDataToHeader)="receiveDataFromItemMenu($event)"
                  [propertyTitle]=" 'Calcul Taxe' "
-                 [cheminImage]="'assets/img/IconeTaxe.png'">
+                 [cheminImage]="'assets/img/IconeTaxe.png'"
+                 (click)="getvalue2()">
 
   </app-item-menu>
 </div>
 <div class="m3">
   <app-item-menu (sendDataToHeader)="receiveDataFromItemMenu($event)"
                  [propertyTitle]=" 'Simulateur épargne' "
-                 [cheminImage]="'assets/img/iconeEpargne.png'">
+                 [cheminImage]="'assets/img/iconeEpargne.png'"
+                 (click)="getvalue3()">
 
   </app-item-menu>
 </div>
 <div class="m4">
   <app-item-menu (sendDataToHeader)="receiveDataFromItemMenu($event)"
                  [propertyTitle]=" 'Calcul Revenue' "
-                 [cheminImage]="'assets/img/iconeRevenue.png'">
+                 [cheminImage]="'assets/img/iconeRevenue.png'"
+                 (click)="getvalue4()">
 
   </app-item-menu>
 </div>
 
 <div class="m5"><app-item-menu (sendDataToHeader)="receiveDataFromItemMenu($event)"
                                [propertyTitle]=" 'Articles' "
-                               [cheminImage]="'assets/img/IconeArticle.png'">
+                               [cheminImage]="'assets/img/IconeArticle.png'"
+                               (click)="getvalue5()">
 
 </app-item-menu>
 </div>

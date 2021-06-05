@@ -8,6 +8,7 @@
     "formulaire formulaire result result"
     "formulaire formulaire result result"
     "formulaire formulaire result result";
+  margin-top: -21%;
 }
 
 .formulaire { grid-area: formulaire; margin: 10px }
