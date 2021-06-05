@@ -2,20 +2,20 @@
   <div class="formulaire">
     <form>
       <h1>simulateur Epargne</h1>
-      <input placeholder="Capital initial (DT)" type="txt" required="">
-      <input placeholder="Versement/mois (DT) " type="txt" required="">
-      <input placeholder="Rendement %" type="txt" required="">
-      <input placeholder="Durée (mois)" type="txt" required="">
+      <input ngModel name="initial" placeholder="Capital initial (DT)" type="txt" required>
+      <input ngModel name="versement" placeholder="Versement/mois (DT) " type="txt" required>
+      <input ngModel name="taux" placeholder="Rendement %" type="txt" required="">
+      <input name="duree" placeholder="Durée (mois)" type="txt" required="">
 
-      <button>Lancer le simulateur</button>
+      <button  (click)="changeShow()">Lancer le simulateur</button>
     </form>
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
 
 
   </div>
-  <div class="result">
-    la resultat
+  <div  class="result" [hidden]="show">
+    <app-resultat-epargne></app-resultat-epargne>
   </div>
 </div>
 

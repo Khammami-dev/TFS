@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FormPretComponent implements OnInit {
   show=true;
 
-  constructor() { }
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
   }
