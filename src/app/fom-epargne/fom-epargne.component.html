@@ -1,6 +1,6 @@
 <div class="grid-container">
   <div class="formulaire">
-    <form>
+    <form (ngSubmit)="onSubmit(formulaire)" #formulaire="ngForm">
       <h1>simulateur Epargne</h1>
       <input ngModel name="initial" placeholder="Capital initial (DT)" type="txt" required>
       <input ngModel name="versement" placeholder="Versement/mois (DT) " type="txt" required>

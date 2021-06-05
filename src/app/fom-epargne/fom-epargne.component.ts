@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fom-epargne.component.css']
 })
 export class FomEpargneComponent implements OnInit {
+  onSubmit(formulaire: ngForm){
+    console.log(formulaire);
+  }
   show=true;
 
   constructor() { }
