@@ -56,7 +56,8 @@
 #bulbasaur {
   background-image: url("/assets/img/article.jpg");
 
-  color: rgba(0, 172, 193, .5);
+  color: rgb(80, 108, 111, .5);
+
 }
 
 #bulbasaur::after {

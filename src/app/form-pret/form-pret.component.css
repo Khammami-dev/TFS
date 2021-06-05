@@ -25,7 +25,7 @@ h1 {
   height: 85px;
   width: 100%;
   font-size: 18px;
-  background: #18aa8d;
+  background: rgb(20 182 198);
   color: white;
   line-height: 150%;
   border-radius: 3px 3px 0 0;
@@ -39,6 +39,8 @@ form {
   padding-bottom: 40px;
   border-radius: 3px;
   margin: 10px;
+  background-color: white;
+  opacity: 0.9;
 }
 form h1 {
   box-sizing: border-box;
@@ -49,14 +51,15 @@ input {
   width: 200px;
   display: block;
   border: none;
-  padding: 15px 0;
-  border-bottom: solid 1px #1abc9c;
+  padding: 16px 0;
+  border-bottom: solid 1px rgb(20 182 198);
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, rgb(20 182 198) 4%);
   background-position: -200px 0;
   background-size: 200px 100%;
   background-repeat: no-repeat;
-  color: #0e6252;
+  color: rgb(20 182 198);
+
 }
 input:focus, input:valid {
   box-shadow: none;
@@ -64,22 +67,25 @@ input:focus, input:valid {
   background-position: 0 0;
 }
 input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
-  color: #1abc9c;
+  color: rgb(20 182 198);
   font-size: 11px;
   transform: translateY(-20px);
   visibility: visible !important;
 }
 button {
   border: none;
-  background: #1abc9c;
+  background: rgb(20 182 198);
   cursor: pointer;
   border-radius: 5px;
-  padding: 15px;
+  padding: 16px;
   width: 200px;
   color: white;
   margin-left: 25px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
   height: 50px;
+  margin-top: 20px;
+  font-size: 16px;
+  opacity: 1;
 }
 button:hover {
   transform: translateY(-3px);
@@ -116,9 +122,9 @@ button:hover {
 
 
 .box select {
-  background-color: #0563af;
-  color: white;
-  padding: 15px;
+  background-color: #7c8c8e;
+  color:white;
+  padding: 16px;
   width: 200px;
   border: none;
   font-size: 14px;
