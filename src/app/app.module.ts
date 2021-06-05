@@ -19,6 +19,7 @@ import { ArticlesComponent } from './articles/articles.component';
 import { FomEpargneComponent } from './fom-epargne/fom-epargne.component';
 import { FormTaxeComponent } from './form-taxe/form-taxe.component';
 import {FormsModule} from '@angular/forms';
+import { ResultCreditComponent } from './result-credit/result-credit.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {FormsModule} from '@angular/forms';
     FormPretComponent,
     ArticlesComponent,
     FomEpargneComponent,
-    FormTaxeComponent
+    FormTaxeComponent,
+    ResultCreditComponent
   ],
     imports: [
         BrowserModule,
