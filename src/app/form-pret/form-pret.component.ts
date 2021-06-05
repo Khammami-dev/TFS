@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form-pret.component.css']
 })
 export class FormPretComponent implements OnInit {
+  show=true;
 
   constructor() { }
 
@@ -13,6 +14,8 @@ export class FormPretComponent implements OnInit {
   }
 
 
-
+  changeShow(){
+    this.show=false;
+  }
 
 }

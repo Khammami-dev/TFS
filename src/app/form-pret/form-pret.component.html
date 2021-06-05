@@ -1,26 +1,26 @@
 <div class="grid-container">
   <div class="formulaire">
-    <form>
+    <form #monFormulaire="ngForm">
       <h1>simulateur credit</h1>
-      <input placeholder="Montant DT" type="txt" required="">
-      <input placeholder="Durée" type="txt" required="">
-      <input placeholder="Taux %" type="txt" required="">
+      <input  ngModel name="montant" placeholder="Montant (DT)" type="txt" required>
+      <input ngModel name="duree" placeholder="Durée (mois)" type="txt" required>
+      <input ngModel name="taux" placeholder="Taux (%)" type="txt" required>
       <div class="box">
-        <select>
+        <select >
           <option>Voiture</option>
           <option>Maison</option>
           <option>immobilier</option>
         </select>
       </div>
 
-      <button>Lancer le simulateur</button>
+      <button (click)="changeShow()">Lancer le simulateur</button>
     </form>
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
 
 
   </div>
-  <div class="result">
+  <div class="result" [hidden]="show" >
     la resultat
   </div>
 </div>
