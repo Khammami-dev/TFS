@@ -49,7 +49,7 @@ input {
   width: 200px;
   display: block;
   border: none;
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: solid 1px #1abc9c;
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #1abc9c 4%);
@@ -73,12 +73,13 @@ button {
   border: none;
   background: #1abc9c;
   cursor: pointer;
-  border-radius: 3px;
-  padding: 6px;
+  border-radius: 5px;
+  padding: 15px;
   width: 200px;
   color: white;
   margin-left: 25px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  height: 50px;
 }
 button:hover {
   transform: translateY(-3px);
@@ -117,7 +118,7 @@ button:hover {
 .box select {
   background-color: #0563af;
   color: white;
-  padding: 12px;
+  padding: 15px;
   width: 200px;
   border: none;
   font-size: 14px;
@@ -125,7 +126,7 @@ button:hover {
   appearance: button;
   outline: none;
   margin-bottom: 17px;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .box::before {
