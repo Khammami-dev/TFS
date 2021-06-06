@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form-taxe.component.css']
 })
 export class FormTaxeComponent implements OnInit {
+  show = true;
 
   constructor() { }
 
+
   ngOnInit(): void {
   }
-
+  changeShow(){
+    this.show=false;
+  }
 }

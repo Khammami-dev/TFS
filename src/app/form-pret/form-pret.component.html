@@ -1,29 +1,37 @@
-<div class="grid-container">
-  <div class="formulaire">
-    <form #monFormulaire="ngForm">
-      <h1>simulateur credit</h1>
-      <input  ngModel name="montant" placeholder="Montant (DT)" type="txt" required>
-      <input ngModel name="duree" placeholder="Durée (mois)" type="txt" required>
-      <input ngModel name="taux" placeholder="Taux (%)" type="txt" required>
-      <div class="box">
-        <select >
-          <option>Voiture</option>
-          <option>Maison</option>
-          <option>immobilier</option>
-        </select>
+<div class="in-left">
+  <div class="container">
+
+      <div class="grid-container">
+        <div class="formulaire">
+          <form #monFormulaire="ngForm" id="in-left">
+            <h1>simulateur credit</h1>
+            <input  ngModel name="montant" placeholder="Montant (DT)" type="txt" required>
+            <input ngModel name="duree" placeholder="Durée (mois)" type="txt" required>
+            <input ngModel name="taux" placeholder="Taux (%)" type="txt" required>
+            <div class="box">
+              <select >
+                <option>Voiture</option>
+                <option>Maison</option>
+                <option>immobilier</option>
+              </select>
+            </div>
+
+            <button (click)="changeShow()">Lancer le simulateur</button>
+          </form>
+
+          <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+
+
+        </div>
+        <div class="result" [hidden]="show" >
+          <app-result-credit></app-result-credit>
+        </div>
       </div>
 
-      <button (click)="changeShow()">Lancer le simulateur</button>
-    </form>
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
-
-
-  </div>
-  <div class="result" [hidden]="show" >
-      <app-result-credit></app-result-credit>
   </div>
 </div>
+
 
 
 

@@ -9,7 +9,7 @@ export class MenuComponent implements OnInit {
 
 
   constructor() { }
-  @Input() value:any;
+  @Input() value:string="";
   @Output() sendDataToBody = new EventEmitter();
 
   ngOnInit(): void {
@@ -21,10 +21,7 @@ export class MenuComponent implements OnInit {
   getvalue1(){
     this.value="credit";
     this.sendDataToBody.emit(
-      {
-        value: this.value
-
-      }
+      this.value
     );
 
 
@@ -32,10 +29,7 @@ export class MenuComponent implements OnInit {
   getvalue2(){
     this.value="taxe";
     this.sendDataToBody.emit(
-      {
-        value: this.value
-
-      }
+      this.value
     );
 
 
@@ -43,20 +37,14 @@ export class MenuComponent implements OnInit {
   getvalue3(){
     this.value="epargne";
     this.sendDataToBody.emit(
-      {
-        value: this.value
-
-      }
+      this.value
     );
 
   }
   getvalue4(){
     this.value="revenue";
     this.sendDataToBody.emit(
-      {
-        value: this.value
-
-      }
+      this.value
     );
 
   }

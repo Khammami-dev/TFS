@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {NgForm} from '@angular/forms';
+import {EpargneService} from '../services/epargne.service';
 
 @Component({
   selector: 'app-fom-epargne',
@@ -6,16 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fom-epargne.component.css']
 })
 export class FomEpargneComponent implements OnInit {
-  onSubmit(formulaire: ngForm){
-    console.log(formulaire);
+
+  onSubmit(formulaire: NgForm){
+    return (formulaire.value);
   }
   show=true;
 
-  constructor() { }
+  constructor( /*private epargneService: EpargneService*/ ) { }
 
   ngOnInit(): void {
   }
   changeShow(){
     this.show=false;
   }
+
 }

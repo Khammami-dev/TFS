@@ -3,7 +3,9 @@
   <div class="logo"><app-sitelogo></app-sitelogo></div>
 
   <div class="body1">
-    <app-body1></app-body1>
+    <app-form-pret *ngIf="credit"></app-form-pret>
+    <app-form-taxe *ngIf="taxe"></app-form-taxe>
+    <app-fom-epargne *ngIf="epargne"></app-fom-epargne>
   </div>
 
   <div class="menu"><app-menu (sendDataToBody)="receiveDataFromMenu($event)" ></app-menu></div>

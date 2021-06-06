@@ -1,6 +1,8 @@
+<div class="in-left">
+  <div class="container">
 <div class="grid-container">
   <div class="formulaire">
-    <form (ngSubmit)="onSubmit(formulaire)" #formulaire="ngForm">
+    <form (ngSubmit)="onSubmit(formulaire)" #formulaire="ngForm" id="in-left">
       <h1>simulateur Epargne</h1>
       <input ngModel name="initial" placeholder="Capital initial (DT)" type="txt" required>
       <input ngModel name="versement" placeholder="Versement/mois (DT) " type="txt" required>
@@ -18,7 +20,8 @@
     <app-resultat-epargne></app-resultat-epargne>
   </div>
 </div>
-
+  </div>
+</div>
 
 
 

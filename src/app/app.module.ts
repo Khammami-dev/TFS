@@ -21,6 +21,7 @@ import { FormTaxeComponent } from './form-taxe/form-taxe.component';
 import {FormsModule} from '@angular/forms';
 import { ResultCreditComponent } from './result-credit/result-credit.component';
 import { ResultatEpargneComponent } from './resultat-epargne/resultat-epargne.component';
+import { ResultTaxeComponent } from './result-taxe/result-taxe.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ResultatEpargneComponent } from './resultat-epargne/resultat-epargne.co
     FomEpargneComponent,
     FormTaxeComponent,
     ResultCreditComponent,
-    ResultatEpargneComponent
+    ResultatEpargneComponent,
+    ResultTaxeComponent
   ],
     imports: [
         BrowserModule,

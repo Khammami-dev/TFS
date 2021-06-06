@@ -6,7 +6,13 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-   valeur:string="";
+  valeur:string="";
+  credit = false;
+  epargne= false;
+  taxe=false;
+  revenue=false;
+  article=false
+
    @Output() sendDataToBody2 = new EventEmitter();
 
   constructor() { }
@@ -14,15 +20,29 @@ export class BodyComponent implements OnInit {
   ngOnInit(): void {
   }
   receiveDataFromMenu(value: string): void{
-    this.valeur=value;
-    console.log(this.valeur);
+    if(value=="credit"){
+      this.credit=true;
+    }else{this.credit=false;}
+    if(value=="epargne"){
+      this.epargne=true;
+    }else{this.epargne=false;}
+    if(value=="taxe"){
+      this.taxe=true;
+    }else{this.taxe=false;}
+    if(value=="revenue"){
+      this.revenue=true;
+    }else{this.revenue=false;}
+    if(value=="article"){
+      this.article=true;
+    }else{this.article=false;}
+
+
 
   }
-  sendDataTobody2(){
-    this.sendDataToBody2.emit(
-      this.valeur
-    );
-  }
+
+
+
+
 
 
 }
