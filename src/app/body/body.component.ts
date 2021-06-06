@@ -7,7 +7,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class BodyComponent implements OnInit {
   valeur:string="";
-  credit = false;
+  credit = true;
   epargne= false;
   taxe=false;
   revenue=false;

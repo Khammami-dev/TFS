@@ -1,0 +1,16 @@
+.m1 { grid-area: 3 / 1 / 4 / 2;
+  margin: auto; }
+
+.m2 { grid-area: 3 / 2 / 4 / 3;
+  margin: auto;}
+
+.m3 { grid-area: 3 / 3 / 4 / 4;
+  margin: auto;}
+
+
+.m4 { grid-area: 3 / 4 / 4 / 5;
+  margin: auto; }
+
+.m5 { grid-area: 3 / 5 / 4 / 6;
+  margin: auto;}
+

@@ -68,7 +68,7 @@ span {
 }
 .img {
   animation: fadeIn 0.5s;
-  border: 2px solid #c0c0c0;
+
   margin: 20px;
 }
 .img__overlay {

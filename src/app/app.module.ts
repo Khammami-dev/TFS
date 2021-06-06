@@ -24,7 +24,7 @@ import { ResultatEpargneComponent } from './resultat-epargne/resultat-epargne.co
 import { ResultTaxeComponent } from './result-taxe/result-taxe.component';
 import { BckComponent } from './bck/bck.component';
 import { HomeComponent } from './Admin/home/home.component';
-import { BanqueComponent } from './admin/banque/banque.component';
+import { BtnMenuComponent } from './btn-menu/btn-menu.component';
 
 
 @NgModule({
@@ -50,7 +50,7 @@ import { BanqueComponent } from './admin/banque/banque.component';
     ResultTaxeComponent,
     BckComponent,
     HomeComponent,
-    BanqueComponent
+    BtnMenuComponent
   ],
     imports: [
         BrowserModule,
