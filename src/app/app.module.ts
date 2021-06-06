@@ -22,6 +22,10 @@ import {FormsModule} from '@angular/forms';
 import { ResultCreditComponent } from './result-credit/result-credit.component';
 import { ResultatEpargneComponent } from './resultat-epargne/resultat-epargne.component';
 import { ResultTaxeComponent } from './result-taxe/result-taxe.component';
+import { BckComponent } from './bck/bck.component';
+import { HomeComponent } from './Admin/home/home.component';
+import { BanqueComponent } from './admin/banque/banque.component';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +47,10 @@ import { ResultTaxeComponent } from './result-taxe/result-taxe.component';
     FormTaxeComponent,
     ResultCreditComponent,
     ResultatEpargneComponent,
-    ResultTaxeComponent
+    ResultTaxeComponent,
+    BckComponent,
+    HomeComponent,
+    BanqueComponent
   ],
     imports: [
         BrowserModule,
